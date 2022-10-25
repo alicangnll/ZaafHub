@@ -11,4 +11,4 @@
 <li>Click to "Setup" button and Setting up all SQL configuration (not use SQL password. That's a lab :) )</li>
 <li>You are ready for all!</li>
 </ul>
-<b>Btw, you can add your vulnerable codes in this repository. I will check and accept all of them (exclude webshells or like this :P )</b>
+<b>Btw, you can add your vulnerable codes to this repository. I'll check and accept all of them (except webshells or something like that :P)</b>
