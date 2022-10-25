@@ -1,4 +1,4 @@
-# VulnCenter-Lab
+# ZaafHub
 <center><h2>Web Vulnerabilities Labs</h2></center>
 
 <img src="img/img.png" alt="VulnCenter Lab GUI">
