@@ -1,6 +1,6 @@
 # ZaafHub
 ZaafHub | Web Vulnerability Lab for Beginners
-<br>
+<br><br>
 <img src="img/img.png" alt="VulnCenter Lab GUI">
 <hr></hr>
 <h2>Installation</h2>
