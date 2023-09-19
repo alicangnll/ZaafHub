@@ -8,34 +8,29 @@
       <p align="right" style="font-size:200%" class="text-center">Ali Can Gonullu | Vulnerable Web Application</p>
     </div>
     <?php
-  function generate_token() {
+    function generate_token() {
+		$token = rand();
     // Check if a token is present for the current session
     if(!isset($_COOKIE["csrf_token"])) {
-        // No token present, generate a new one
-        $token = rand();
-		echo '<script>document.cookie = "csrf_token='.strip_tags($token).'; expires=Thu, '.date("d").' Dec 2032 12:00:00 UTC; path=/";</script>';
+      setcookie("csrf_token", strip_tags($token), time()+3600);
+    } else if(empty($_COOKIE["csrf_token"])) {
+      header("Refresh:0");
     } else {
-		$token = rand();
-        echo '<script>document.cookie = "csrf_token='.strip_tags($token).'; expires=Thu, '.date("d").' Dec 2032 12:00:00 UTC; path=/";</script>';
-		//NO PROBLEM
+      return $_COOKIE["csrf_token"];
     }
-	if(empty($_COOKIE["csrf_token"])) {
-		header("Refresh:0");
-	} else {
-		return $_COOKIE["csrf_token"];
-	}
-  }
-  ?>
-    <div style="background-color:#c9c9c9;padding:20px;">
+    }
+    echo '<div style="background-color:#c9c9c9;padding:20px;">
       <h1 align="center">Login as Admin</h1>
       <br>
       <form method="post" action="lvl1.php">
         <input type="text" name="accnt" placeholder="accnt number" /><br>
-        <input type="hidden" name="csrf_token" value="" />
+        <input type="hidden" name="csrf_token" value="'.generate_token().'" />
         <input type="submit" />
     </form>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  ';
+  ?>
   <script>
   function deleteAllCookies() {
     var cookies = document.cookie.split(";");
