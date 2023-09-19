@@ -10,7 +10,7 @@
 
     <div style="background-color:#c9c9c9;padding:20px;">
       <h1 align="center">Analyze code and find buffer overflow byte</h1>
-      <b>Download file from <a href="code.txt">there</a><br> You can use <a href="https://www.onlinegdb.com/online_c_compiler">Online C Compiler</a></b>
+      <b>Download file from <a target="_blank" href="code.txt">there</a><br> You can use <a target="_blank" href="https://www.onlinegdb.com/online_c_compiler">Online C Compiler</a></b>
       <form align="center" action="Overflow-1.php" method="POST">
       <label align="center">Flag:</label><br>
       <input align="center" type="text" name="username" value="Flag"><br>
