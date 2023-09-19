@@ -24,7 +24,7 @@
       <input type="submit" name="submit1" value="Enter" style="padding:8px;" class="btn btn-primary"></form>
   </div>
 
-<div align="center" style="padding:60px;">
+<div align="center" class="card" style="padding:60px;">
 <?php
 
 if (isset($_POST["submit"])) {
