@@ -13,7 +13,7 @@
     <a class="btn btn-primary" onclick="location.href='index.php'">Home Page</a>
   </div>
   </link>
-  <div align="center" style="padding:150px;">
+  <div align="center" class="card" style="padding:5%;border-radius: 10px;">
 
     <form method="POST" class="mt-2">
       <label style="font-size:24px;font-family:'Georgia'">Create Database:&ensp;</label>
