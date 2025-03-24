@@ -19,6 +19,7 @@
       <a class="btn btn-primary"  name="_button" href='IDOR/idor.html'>IDOR</a>
       <a class="btn btn-primary"  name="_button" href='XXE/xxe.html'>XXE</a>
       <a class="btn btn-primary"  name="_button" href='PATH/path.html'>Path Traversal</a>
+      <a class="btn btn-primary"  name="_button" href='Collusion/collusion.html'>Hash Collision</a>
     </div>
     <hr></hr>
     <h2>Program Bugs</h2>
